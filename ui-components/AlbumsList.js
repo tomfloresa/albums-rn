@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 import axios from 'axios';
 
 import AlbumDetail from './AlbumDetail';
@@ -20,15 +20,15 @@ export default class AlbumsList extends Component {
 
     render() {
         return(
-            <View>
+            <ScrollView>
                 { this.renderAlbums() }
-            </View>
+            </ScrollView>
         );
     }
 }
 
 const styles = StyleSheet.create({
     title: {
-        color: 'black'
+        color: 'black',
     }
 })
